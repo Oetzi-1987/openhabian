@@ -6,6 +6,8 @@
 *.md text
 *.sh text
 *.conf text
+*.bash text
+*.bats text
 
 # Binary files
 *.png binary
