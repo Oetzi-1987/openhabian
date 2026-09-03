@@ -887,7 +887,7 @@ setup_esphome_device_builder() {
     fi 
         
     echo "$(timestamp) [openHABian] Creating directory at $esphomeDir and set permissions"
-    if ! mkdir -p "$esphomeDir"; then 
+    if ! mkdir -p "$esphomeDir"; then    
       echo -e "$(timestamp) [openHABian] ${COL_RED}Error: Failed to create $esphomeDir${COL_DEF}"
       return 1
     fi
