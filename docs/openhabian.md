@@ -57,7 +57,7 @@ The openHABian image supports all Raspberry Pi models.
 Running in 64 bit on ARM has one major drawback: increased memory usage. That is not a good idea on heavily memory constrained platforms like older Raspberries. Ensure your RPi has a minimum of 2 GB.
 For older hardware, you can attempt to use the 32 bit image we still provide, it should work but we do not support running openHAB 5.
 
-openHABian can run on x86 based systems but you will need to install the Debian OS yourself.
+openHABian can run on x86 based systems, too, but you will need to install the Debian OS yourself.
 See [installation on other Linux systems](#installation-on-other-linux-systems) for directions on what to do.
 On x86 hardware, it's all 64 bit but that in turn once more increases memory usage. A NUC to run on should have no less than 4 GB, 8 are better.
 
@@ -251,7 +251,9 @@ Each of these are included as a part of `openhabian-config` menu option 20.
 -   Mi Flora MQTT daemon
 -   [ESPHome Device Builder](https://esphome.io/guides/getting_started_hassio.html#device-builder-interface) - Webinterface for easy configuration, installation and updating of ESPHome devices at [http://openhabian:6052](http://openhabian:6052) <br/>
 The ESPHome configuration files are secured by the openHABbian backup function. <br/>
-**Please note that automatic updates are not implemented in OpenHABian. <br/> &rarr; to do this, use the openhbaian-config update function in menu 20**
+**Please note that automatic updates are not implemented in OpenHABian.** <br/> &rarr; to do this, use the openhabian-config update function in menu 20<br/>
+**Major Upgrades from versions 2026.5.0 and earlier &rarr; 2026.6.0 and later.** <br/> The update script completely removes ESPHome during this process. The ESPHome configuration files are **NOT** removed. <br/>
+Afterwards, the installation script must be run manually again to install the latest version of the ESP Home Device Builder. 
 -   Grott Proxy server for [Growatt binding](https://www.openhab.org/addons/bindings/growatt/#grott-application-installation-and-setup)
 
 ## First boot configuration
