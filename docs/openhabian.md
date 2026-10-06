@@ -251,7 +251,7 @@ Each of these are included as a part of `openhabian-config` menu option 20.
 -   Mi Flora MQTT daemon
 -   [ESPHome Device Builder](https://esphome.io/guides/getting_started_hassio.html#device-builder-interface) - Webinterface for easy configuration, installation and updating of ESPHome devices at [http://openhabian:6052](http://openhabian:6052) <br/>
 **Please note that automatic updates are not implemented in OpenHABian.** <br/> &rarr; to do this, use the openhabian-config update function in menu 20<br/>
-During major upgrades the ESPHome device builder hast to be removed completely. This will **not** affect the ESPHome configuration files.<br/>
+During major upgrades the ESPHome device builder has to be removed completely. This will **not** affect the ESPHome configuration files.<br/>
 -   Grott Proxy server for [Growatt binding](https://www.openhab.org/addons/bindings/growatt/#grott-application-installation-and-setup)
 
 ## First boot configuration
