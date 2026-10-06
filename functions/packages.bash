@@ -872,7 +872,7 @@ if [ "$setupMode" = "install" ]; then
     echo "$(timestamp) [openHABian] The option installation / update was selected"
     echo "$(timestamp) [openHABian] Checking if the minimum required python version is available..."
     if ! apt-get update -qq; then
-        echo "$(timestamp) [openHABian] ${COL_RED} Error: Updating the newest package list was not sucessfull... ${COL_DEF}"
+        echo "$(timestamp) [openHABian] ${COL_RED} Error: Updating the newest package list was not successful... ${COL_DEF}"
         return 1
     fi
     # get candidate version and remove Debian suffixes
