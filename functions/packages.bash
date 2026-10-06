@@ -867,7 +867,7 @@ local majorUpdateText_venv="##################### Major update detected ########
 echo "$(timestamp) [openHABian] ##########################################################################################################"
 echo "$(timestamp) [openHABian] ESPHome Setup"
   
-# This pre-check is necessary to decide if install or update routine is neccesary and if the needed minimum python version is available for the system.
+# This pre-check is necessary to decide if install or update routine is necessary and if the needed minimum python version is available for the system.
 if [ "$setupMode" = "install" ]; then
     echo "$(timestamp) [openHABian] The option installation / update was selected"
     echo "$(timestamp) [openHABian] Checking if the minimum required python version is available..."
